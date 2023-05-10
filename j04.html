@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>JavaScript04</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+<div class="container p-2">
+	<div class="row justify-content-center">
+		<div class="col-6 align-items-center">
+			<div class="row m-1">
+				<input id="textField" class="form-control">
+			</div>
+			<div class="row m-1">
+				<div class="col-3 pr-2" style="padding: 0px">
+					<button value="7" class="btn btn-primary" style="width: 100%" onclick="Print(this)">7</button>
+				</div>
+				<div class="col-3 pr-1" style="padding: 0px">
+					<button value="8" class="btn btn-primary" style="width: 100%" onclick="Print(this)">8</button>
+				</div>
+				<div class="col-3 pl-1" style="padding: 0px">
+					<button value="9" class="btn btn-primary" style="width: 100%" onclick="Print(this)">9</button>
+				</div>
+				<div class="col-3 pl-2" style="padding: 0px">
+					<button value="*" class="btn btn-warning" style="width: 100%" onclick="Print(this)">X</button>
+				</div>
+			</div>
+			<div class="row m-1">
+				<div class="col-3 pr-2" style="padding: 0px">
+					<button value="4" class="btn btn-primary" style="width: 100%" onclick="Print(this)">4</button>
+				</div>
+				<div class="col-3 pr-1" style="padding: 0px">
+					<button value="5" class="btn btn-primary" style="width: 100%" onclick="Print(this)">5</button>
+				</div>
+				<div class="col-3 pl-1" style="padding: 0px">
+					<button value="6" class="btn btn-primary" style="width: 100%" onclick="Print(this)">6</button>
+				</div>
+				<div class="col-3 pl-2" style="padding: 0px">
+					<button value="/" class="btn btn-warning" style="width: 100%" onclick="Print(this)">/</button>
+				</div>
+			</div>
+			<div class="row m-1">
+				<div class="col-3 pr-2" style="padding: 0px">
+					<button value="1" class="btn btn-primary" style="width: 100%" onclick="Print(this)">1</button>
+				</div>
+				<div class="col-3 pr-1" style="padding: 0px">
+					<button value="2" class="btn btn-primary" style="width: 100%" onclick="Print(this)">2</button>
+				</div>
+				<div class="col-3 pl-1" style="padding: 0px">
+					<button value="3" class="btn btn-primary" style="width: 100%" onclick="Print(this)">3</button>
+				</div>
+				<div class="col-3 pl-2" style="padding: 0px">
+					<button value="+" class="btn btn-warning" style="width: 100%" onclick="Print(this)">+</button>
+				</div>
+			</div>
+			<div class="row m-1">
+				<div class="col" style="padding: 0px">
+					<button value="0" class="btn btn-primary" style="width: 100%" onclick="Print(this)">0</button>
+				</div>
+				<div class="col-3 pl-2" style="padding: 0px">
+					<button class="btn btn-warning" style="width: 100%" onclick="Equals(this)">=</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+    function Print(btn) {
+		let textField = document.getElementById("textField");
+		textField.value = textField.value+btn.value;
+    }
+	function Equals(btn) {
+		let textField = document.getElementById("textField");
+		let code = textField.value;
+		textField.value = eval(code);
+    }
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
