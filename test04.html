@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test04</title>
+</head>
+<body>
+    <div class="paragraph1 border">
+        Все три с лишним десятка <span class="adjective border">высокотемпературных</span> сверхпроводников, 
+        полученных к началу нашего столетия,
+        – это <span class="adjective border">сложные</span> соединения оксидов меди, 
+        обладающие структурой <span class="adjective border">слоистых</span> псевдоперовскитов. 
+        Они уже нашли применения в <span class="adjective border">энергетических</span> 
+        технологиях — правда, пока довольно <span class="adjective border">скромные</span>.
+    </div>
+    <div class="paragraph2 border">
+        <span class="adjective border">Японская</span> фирма <span class="name"; style="background-color:#fe3cba; ">Sumimoto Electric</span> несколько лет назад освоила 
+        выпуск <span class="adjective border">электрических</span> <span class="adjective border">сверхпроводящих</span> кабелей, 
+        выдерживающих ток силой 200 А при температурах <span class="adjective border">жидкого</span> азота, 
+        и рассчитывает довести этот показатель до 300 А. 
+        Однако эти материалы отличаются хрупкостью и анизотропностью, 
+        поэтому работать с ними сложно. 
+        В <span class="adjective border">чистом</span> виде они не годятся даже для изготовления <span class="adjective border">токонесущих</span> проводов, 
+        которые приходится делать в виде сэндвичей с довольно <span class="adjective border">сложной</span> структурой.
+    </div>
+    <div class="paragraph3 border">
+        <span class="adjective border">Немецкая</span> корпорация <span class="name"; style="background-color:#fe3cba;">Siemens</span> успешно испытала <span class="adjective border">сверхпроводящий</span> 
+        генератор мощностью 4 мегаватта и вместе с 
+        <span class="adjective border">технологическим</span> институтом <span class="name"; style="background-color:#fe3cba; ">Карлсруэ</span> приступила к разработке 
+        установки на несколько сотен мегаватт. 
+        На фото — одна из деталей <span class="adjective border">сверхпроводящего</span> генератора.
+    </div>
+    <style>
+        .adjective {
+            background-color: #00FFFF;
+        }
+        .name {
+            opacity: 70%; padding: 2px 3px;
+        }
+        .paragraph1 {
+            text-align:center; 
+            background: linear-gradient(#00FA9A, #b4f1dd, #8eee68); 
+        }
+        .paragraph2 {
+            text-align: right; 
+            background: radial-gradient(#F0F8FF, #87CEFA, #f4c1f4); 
+            width: 500px; 
+        }
+        .paragraph3 {
+            text-align: left; 
+            background: #B0E0E6;
+            box-sizing: border-box; 
+            width: 50%; 
+        }
+        .border {
+            border: 2px dashed rgb(2, 141, 255);
+            margin: 3px; 
+            padding: 0 4px;
+            border-radius: 8px;
+            box-shadow: 0 0 8px rgb(133, 3, 3)
+
+        }
+        .paragraph1 .adjective {
+            background-color: #f6ff00 
+        }
+        .paragraph2 .adjective {
+            background-color: #ff6f00
+        }
+        .paragraph3 .adjective {
+            background-color: #2200ff
+        }
+        .paragraph1.border {
+            border: 5px solid rgb(2, 255, 103);
+            margin: 3px; 
+            padding: 5 4px;
+            border-radius: 8px;
+            box-shadow: 0 0 8px rgb(72, 20, 243)
+        }
+        .paragraph2.border {
+            border: 2px dashed rgb(2, 141, 255);
+            margin: 4px; 
+            padding: 0 4px;
+            border-radius: 8px;
+            box-shadow: 0 0 8px rgb(133, 3, 3)
+        }
+        .paragraph3.border {
+            border: 2px dotted rgb(255, 238, 2);
+            margin: 6px; 
+            padding: 8 16px;
+            border-radius: 8px;
+        }
+        .adjective.border {
+            border: 2px dashed rgb(6, 25, 40);
+            margin: 3px; 
+            padding: 0 4px;
+        }
+        .paragraph1:hover .adjective:hover {
+        background: greenyellow;
+        }
+        .paragraph2:hover .adjective:hover {
+        background: greenyellow;
+        }
+        .paragraph3:hover .adjective:hover {
+        background: greenyellow;
+        }
+    </style>
+</body>
+</html>
